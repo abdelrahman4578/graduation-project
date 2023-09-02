@@ -35,8 +35,8 @@ Wait for the system to process the image and provide a diagnosis and pneumonia t
 Contribution
 Contributions to this project are welcome. If you're interested in collaborating or contributing to the development of this medical diagnosis system, please contact us.
 
-License
-This project is licensed under the MIT License.
+## License
+This project is licensed under the [MIT License](LICENSE).
 
-Contact Information
+## Contact Information
 For inquiries or further information, please contact Abdelrahman Mohamed at abdelrahmanmohamedkhalil6@gmail.com.
