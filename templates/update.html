@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Graduation">
+    <link rel="stylesheet" href="{{url_for('static',filename = "css/update.css")}}">
+    <title>Update Profile</title>
+    <header>
+      <button href="{{url_for('upload_photo')}}">Back</button>
+    </header>
+</head>
+
+<body>
+    <div class="container">
+        <form action='/updatetask' method='POST'>
+            <div class="alert alert-danger" role="alert">
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    <ul class=flashes>
+                    {% for message in messages %}
+                      <li>{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                  {% endif %} 
+                {% endwith %}
+              </div>
+            <h1>Update Profile</h1>
+            <input type="text" placeholder="Full Name" name = "FullName" /><br>
+            <input type="email" placeholder="Email" name = "Email"/><br>
+            <input type="text" placeholder="Address" name = "Address"/><br>
+            <input type="password" placeholder="Password" name = "Password"/><br>
+            <input type="password" placeholder="Confirm Password" name = "ConfirmPassword"/><br>
+            <input type="submit" value="Update">
+        </form>
+    </div>
+
+</body>
+
+</html>

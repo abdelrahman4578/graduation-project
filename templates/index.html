@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home |Pneumonia System</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/homepage.css' )}}"/>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/normalize.css' )}}" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/all.min.css' )}}"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href='https://fonts.gstatic.com'>
+    <link
+      href='https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap'
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <img  class="logo" src="{{url_for('static',filename ="imgs/logo.png" )}}"alt="" />
+
+            <ul class="in-links">
+                <li ><a href="{{url_for('register')}}"> Go To Login </a></li>
+
+              </ul>
+
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Landing Section -->
+    <div class="landing">
+      <div class="intro-text">
+        <h1>Hello There</h1>
+        <p> We are Pneumonia System </p>
+      </div>
+    </div>
+    <!-- End Landing Section -->
+    <!-- Start Features -->
+    <div class="features">
+      <div class="container">
+        <div class="feat">
+          <i class="fas fa-magic fa-3x"></i>
+          <h3>Main Idea</h3>
+          <p>Our idea is to provide an easy way to treat patients and provide them with results in the fastest time</p>
+        </div>
+        <div class="feat">
+          <i class="far fa-gem fa-3x"></i>
+          <h3>We Will Do All The Work</h3>
+          <p>You, as a user of our service, are not obligated to do anything other than send your own rays</p>
+        </div>
+        <div class="feat">
+          <i class="fas fa-globe-asia fa-3x"></i>
+          <h3>Your treatment all over the world</h3>
+          <p>Our mission is to provide appropriate treatment and examination to users of our website services</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Services -->
+    <div class="services" id="services">
+      <div class="container">
+        <h2 class="special-heading">Services</h2>
+        <p></p>
+        <div class="services-content">
+          <div class="col">
+            <!-- Start Service -->
+            <div class="srv">
+                <i class="fab fa-sketch fa-2x"></i>
+                <div class="text">
+                <h3>Required of you as a User</h3>
+                <p>
+                    Providing chest x-rays to be uploaded to the site to be examined, and the result of your examination will be notified to your e-mail.
+                </p>
+              </div>
+            </div>
+            <div class="srv">
+              <i class="fab fa-sketch fa-2x"></i>
+              <div class="text">
+                <h3>Diagnosing Pneumonia</h3>
+                <p>
+                    Due to erroneous diagnosis and treatment, a person died as a result of the inconvenient method of diagnosing pneumonia.
+                    It is now possible to construct an autonomous one system for identifying pneumonia and treating the condition, especially if the patient is in a distant area with few medical services.
+                </p>
+              </div>
+            </div>
+            <!-- End Service -->
+          </div>
+          <div class="col">
+            <!-- Start Services -->
+            <div class="srv">
+                <i class="fab fa-sketch fa-2x"></i>
+                <div class="text">
+                <h3>Chest X-rays</h3>
+                <p>
+                    Chest X-rays are the most thorough method of detecting pneumonia because:
+
+                    It's the cheapest way,
+                    
+                No direct contact with the medical staff.
+                </p>
+              </div>
+            </div>
+            <div class="srv">
+                <i class="fab fa-sketch fa-2x"></i>
+                <div class="text">
+                <h3>Pneumonia Detection</h3>
+                <p>
+                    Pneumonia doctors can detect this case if it is NORMAL or ABNORMAL but cannot detect ABNORMAL case what is suffer from.
+                    ABNORMAL case would be pneumonia or covid- 19 but doctor cannot know this difference
+                </p>
+              </div>
+            </div>
+            <!-- End Services -->
+          </div>
+          <div class="col">
+            <div class="image image-column">
+              <img decoding="async" src="{{url_for('static',filename ="imgs/3.jpg" )}}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Portfolio -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="special-heading">Examination types</h2><br>
+        <div class="portfolio-content">
+          <div class="card">
+            <img decoding="async" src="{{url_for('static',filename ="imgs/11.PNG")}}" alt="" />
+            <div class="info">
+              <h3>Pneumonia</h3>
+              <p>Pneumonia is a leading cause of death in children and the elderly around the world,
+                We will be using Deep Learning Algorithms to detect Pneumonia</p>
+            </div>
+          </div>
+          <div class="card">
+            <img decoding="async" src="{{url_for('static',filename ="imgs/22.PNG")}}" alt="" />
+            <div class="info">
+              <h3>Normal</h3>
+              <p>We will be using Deep Learning Algorithms to detect Pneumonia Normal Case in this project. 
+                There are different methods to diagnose Pneumonia using Chest X-Ray images, but we'll examine different algorithms,
+                 test overall accuracy, and select the best algorithm for detecting Pneumonia..</p>
+            </div>
+          </div>
+          <div class="card">
+            <img decoding="async" src="{{url_for('static',filename ="imgs/33.PNG")}}" alt="" />
+            <div class="info">
+              <h3>Covid-19</h3>
+              <p>COVID-19 (coronavirus disease 2019) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), a strain of coronavirus. The first cases were seen in Wuhan, China, in late December 2019 before spreading globally.
+                 The current outbreak was officially recognized as a pandemic by the World Health Organization (WHO) on 11 March 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start About -->
+    <div class="about">
+      <div class="container">
+        <h2 class="special-heading">ABSTRACT</h2>
+        <p></p>
+        <div class="about-content">
+          <div class="image">
+            <img decoding="async" src="{{url_for('static',filename ="imgs/aaaaaa.jpg" )}}"alt="" />
+          </div>
+          <div class="text">
+            <p>
+                Pneumonia is a highly fatal disease that kills 50,000 Americans each year. 
+                Pneumonia is a serious illness that affects children under the age of five and the elderly over the age of 65. 
+                Each year, the United States spends billions of dollars fighting pneumonia-related diseases. In the treatment of pneumonia-related diseases, early detection and intervention is crucial.
+                 We propose a deep learning approach based on CNN convolutional neural networks to identify and classify cases of pneumonia from chest X-ray images because it is one of the simplest and cheapest methods for diagnosing pneumonia.
+            </p>
+            <hr />
+            <p>
+                Thus, the development of automated monitoring system in the evaluation of pneumonia has gained more importance in treating or curing the disease in the early stages. 
+                Deep learning algorithms such as CNN (Convolutional Neural Network) have gained a lot of attention for disease classification. In our work, we mainly used a pre-trained CNN model for feature extraction followed by multiple classifiers to classify abnormal and normal chest X-rays.
+                 We define analytically.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Contact -->
+    <div class="contact">
+      <div class="container">
+        <h2 class="special-heading">Contact</h2>
+        <div class="info">
+          <p class="label">Feel free to drop us a line at:</p>
+          <a href="mailto:leonagency@mail.com?subject=Contact" class="link">PneumoniaSystem@mail.com</a>
+          <div class="social">
+            Find Us On Social Networks
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">&copy; 2023 <span>Pneumonia System</span> All Right Reserved</div>
+    <!-- End Footer -->
+  </body>
+</html>

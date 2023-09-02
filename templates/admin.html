@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Graduation">
+    <link rel="stylesheet" href="{{url_for('static',filename = "css/admin.css")}}">
+    <title>Admin</title>
+</head>
+
+<body>
+
+    <header>
+        <form action="/admin" method="post" id = 'form'>
+        <div class="navbar">
+          <img src="{{url_for('static',filename = "imgs/New Project.png")}}">
+          <p><span>PENUMONIA</span> SYSTEM</p>
+          <button id='but' >Refresh</button>
+        </div>
+        
+    </form>
+    <li><a href="{{url_for('diagnosed_cases')}}"><button>diagnosed cases</button></a></li>
+      </header>
+
+    <div class="list">
+        {% for user in users %}      
+            <form action = '/api' method = 'post'>
+                <div class="container">
+                    <div class="users">
+                        <div class="head">
+                            <p>{{ user[0]}}<br>
+                               {{ user[1]}}<br>
+                               {{ user[5]}}</p>
+                        </div>
+                        <div class="contain">
+                            <div class="image">
+                                <img src="{{url_for('static', filename='database/{}'.format(user[4]))}}" alt="">
+                            </div>
+                            <input type="hidden" name="user_ID" value="{{ user[2] }}">
+                            <input type="hidden" name="ID" value="{{ user[6] }}">
+                            <input type="hidden" name="user_image" value="{{ user[4] }}">
+                            <div class="btns">
+                                <button  name="button_value" value = "acc">Accept</button>
+                                <button  name="button_value" value = "rej">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        {% endfor %}
+    </div>  
+    <div class="pop-up">
+        <span>&times;</span>
+        <img src="{{url_for('static',filename = "imgs/19677.jpg")}}" alt="">
+    </div>
+    <header class="down">
+        <a href="{{url_for('data')}}"><button>NEXT</button></a>
+
+    </header>
+
+
+
+    <!-- <script>
+        document.querySelectorAll('.contain img').forEach(image =>{
+            document.querySelector('.pop-up').style.display = 'block';
+        });
+    </script> -->
+
+
+</body>
+
+</html>

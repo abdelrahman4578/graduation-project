@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Graduation">
+    <link rel="stylesheet" href="{{url_for('static',filename = "css/data.css")}}">
+    <title>data</title>
+</head>
+
+<body>
+
+    <header>
+      <form action="/data" method="post">
+        <div class="navbar">
+          <img src="{{url_for('static',filename = "imgs/New Project.png")}}">
+          <p><span>PENUMONIA</span> SYSTEM</p>
+        </div>
+        <button>Refresh</button>
+      </form>
+        <a href="{{url_for('admin')}}"><button>BACK</button></a>
+      </header>
+      <div>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>XRay</th>
+            <th>Date</th>
+            <th>Diagnosis</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+            <td>{{ user[0]}}</td>
+            <td>{{ user[1]}}</td>
+            <td>{{ user[2]}}</td>
+            <td>{{ user[3] }}</td>
+            <td>{{ user[4] }}</td>
+            <td>{{ user[5] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>   
+       <div/>            
+                  
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Graduation">
+    <link rel="stylesheet" href="{{url_for('static',filename = "css/diagnosed.css")}}">
+    <title>Admin</title>
+</head>
+
+<body>
+
+    <header>
+        <form action="/diagnosed" method="post">
+        <div class="navbar">
+          <img src="{{url_for('static',filename = "imgs/New Project.png")}}">
+          <p><span>PENUMONIA</span> SYSTEM</p>
+        </div>
+        <button>Refresh</button>
+        </form>
+    <li><a href="{{url_for('undiagnosed_cases')}}"><button>undiagnosed cases</button></a></li>
+      </header>
+
+      <div class="list">
+        {% for user in users %}
+        <form action="/done" method="post">
+                <div class="container">
+                    <div class="users">
+                        <div class="head">
+                            <p>{{ user[0] }}<br>
+                                {{ user[1] }}<br>
+                                {{ user[8]}}</p></p>
+                        </div>
+                        <div class="contain">
+                            <div class="image">
+                                <img src="{{ url_for('static', filename='database/{}'.format(user[4])) }}" alt="">
+                            </div>
+                            <div class="result">
+                            <p>{{ user[6] }}</p>
+                            <div class="image">
+                                <img src="{{ url_for('static', filename='database/{}'.format(user[5])) }}" alt="">
+                            </div>
+                        </div>
+                        <input type="hidden" name="user_ID" value="{{ user[9] }}">
+                        <input type="hidden" name="user_image" value="{{ user[4] }}">
+                        <input type="hidden" name="Diagnosis" value="{{ user[6] }}">
+                        <div class="on">
+                            <input type="text" id="textbox" name="textbox" value="{{user[7]}}">
+                        </div>
+                        <div class="btns">
+                            <button name="button_value" value="done">Done</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </form>
+        {% endfor %}
+      </div>
+    <div class="pop-up">
+        <span>&times;</span>
+        <img src="{{url_for('static',filename = "imgs/19677.jpg")}}" alt="">
+    </div>
+    <header class="down">
+        <a href="{{url_for('data')}}"><button>NEXT</button></a>
+
+    </header>
+
+
+
+    <!-- <script>
+        document.querySelectorAll('.contain img').forEach(image =>{
+            document.querySelector('.pop-up').style.display = 'block';
+        });
+    </script> -->
+
+
+</body>
+
+</html>
