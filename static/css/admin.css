@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 40px 0; */
+    margin: 0;
+}
+
+
+header {
+    width: 100%;
+    height: 72px;
+    background: linear-gradient(to right, #ff4b2be2, #ff416de7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+header button {
+    height: 50%;
+    padding: 7px 20px;
+    border: 2px solid white;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #ff416de7;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+header button:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+header img {
+    width: 60px;
+}
+header .navbar p {
+    margin-top: -15%;
+    margin-left: 70px;
+    color: white;
+    letter-spacing: 1px;
+}
+header .navbar p span {
+    font-weight: bold;
+}
+
+.list {
+    /* background-color: brown; */
+    padding: 20px;
+    max-width: 60%;
+    width: 100%;
+
+}
+
+.list .container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 40px;
+    margin: 30px 0;
+}
+
+.list .container .users {
+    width: 100%;
+    padding: 0;
+    background-color: rgba(212, 212, 212, 0.2);
+    border-left: 1px solid rgb(179, 179, 179);
+    border-right: 1px solid rgb(179, 179, 179);
+    border-bottom: 1px solid rgb(179, 179, 179);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.users .head {
+    width: 100%;
+    height: 25%;
+    background-color: rgb(36, 116, 208);
+    border-top: 1px solid rgb(36, 116, 208);
+    border-radius: 15px;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* .users .head img {
+    width: 55px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+} */
+
+.users .head span {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.users .contain {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contain .image {
+    width: 80%;
+    height: 300px;
+    max-height: 400px;
+    margin-left: 10%;
+}
+.contain .image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .contain .image .left {
+    display: flex;
+    align-items: center;
+} */
+/* .contain .image .right button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(36, 116, 208);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+.contain .image .right button:hover {
+    color: rgb(11, 83, 164);
+} */
+
+/* .contain .image img {
+    width: 60px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 10px;
+} */
+
+.contain .image p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.contain .result {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(169, 169, 169);
+    margin-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} 
+.contain .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.contain .btns button {
+    width: 48%;
+    height: 45px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+.contain .btns button:first-child {
+    background-color: rgb(36, 116, 208);
+    border: 1px solid rgb(36, 116, 208);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+.contain .btns button:first-child:hover {
+    background-color: rgb(24, 89, 163);
+    border: 1px solid rgb(24, 89, 163);
+}
+.contain .btns button:last-child {
+    background-color: rgb(208, 36, 36);
+    border: 1px solid rgb(208, 36, 36);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+.contain .btns button:last-child:hover {
+    background-color: rgb(170, 20, 20);
+    border: 1px solid rgb(170, 20, 20);
+}
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.689);
+    z-index: 200;
+    display: none;
+}
+.pop-up img {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    object-fit: cover;
+}
+.pop-up span {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}

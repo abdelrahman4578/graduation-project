@@ -1,0 +1,119 @@
+* {
+	/* margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(186, 49, 49, 0.6), rgba(0, 0, 0, 1)),
+    url("../imgs/piron-guillaume-U4FyCp3-KzY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 57px; */
+    height: 97.8vh;
+}
+header button {
+        border-radius: 25px;
+        border: 1px solid white;
+        background: white;
+        color: #ff4b2b;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 1px;
+        margin-left: 1100px;
+        margin-bottom: 150px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+        width: 15%;
+        margin-top: 10px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    
+}
+
+
+
+/*header button:hover {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    max-height: 5%;
+}*/
+.container {
+    padding: 40px;
+    background: linear-gradient(to right, #ff4b2be2, #ff416d);
+    border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 50px rgba(35, 35, 35, 0.536);
+    width: 35%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 6%; */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-top: -60px;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container form h1 {
+    font-weight: bold;
+    margin: 0px 0px 40px 0px;
+    color: white;
+}
+.container form input {
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    /* margin: 10px 0; */
+    width: 150%;
+}
+button {
+    border-radius: 25px;
+    border: 1px solid white;
+    background: white;
+    color: #ff4b2b;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: 100%;
+    margin-top: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background: transparent;
+    border-color: #fff;
+}
